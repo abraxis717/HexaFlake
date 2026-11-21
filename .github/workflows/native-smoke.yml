@@ -1,0 +1,31 @@
+name: Native smoke
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Prepare disposable hosted runner
+        env:
+          RUNNER_KIND: ${{ runner.environment }}
+        run: |
+          set -eu
+          test "$RUNNER_KIND" = github-hosted
+          # Administrative preparation of this disposable VM, not runtime mutation.
+          # Refuse swapoff if there is insufficient RAM for used swap plus 1 GiB.
+          awk '/^MemAvailable:/ {a=$2} /^SwapTotal:/ {t=$2} /^SwapFree:/ {f=$2} END {exit !(a>=t-f+1048576)}' /proc/meminfo
+          if grep -q '^SwapTotal:[[:space:]]*[1-9]' /proc/meminfo; then
+            sudo swapoff -a
+          fi
+          awk '/^SwapTotal:/ {exit ($2 != 0)}' /proc/meminfo
+          echo HOSTED_PREPARATION=PASS
+      - name: Native fail-closed smoke
+        run: python3 -B smoke.py

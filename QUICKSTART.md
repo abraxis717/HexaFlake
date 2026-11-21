@@ -14,6 +14,10 @@ On Debian/Ubuntu, the tools can be installed through the system package manager 
 sudo apt install git python3 build-essential
 ```
 
+### macOS, Windows or restricted Linux
+
+No compatible local Linux environment? Open the [GitHub Actions runs](https://github.com/abraxis717/HexaFlake/actions), select a **Native smoke** run and expand **Native fail-closed smoke**. Public logs are available without installing the project. Maintainers can start a fresh run using **Run workflow**. The workflow uses a disposable x86-64 Ubuntu runner and the same `smoke.py`; it prepares swap only inside that VM. A green run qualifies that checkout on that runner, not your local machine. If prerequisites fail, the job fails; there is no unsandboxed fallback. A dedicated x86-64 Linux VM with Landlock ABI >= 3, executable memfd and no swap is the local alternative (on Apple Silicon this requires x86-64 emulation or a remote x86-64 machine). Ordinary containers may inherit incompatible host kernel or swap settings.
+
 ## 2. Clone and run
 
 ```sh

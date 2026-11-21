@@ -6,6 +6,8 @@ Bounded hierarchical geometry for sparse relational computation. HexaFlake combi
 
 **Try it:** [Quick start](QUICKSTART.md) — build and run the native fail-closed smoke test.
 
+**Not on a compatible Linux machine?** See the [hosted native smoke results](https://github.com/abraxis717/HexaFlake/actions); no local installation required to read the logs.
+
 ## Source map
 
 | Component | Location | Scope |
