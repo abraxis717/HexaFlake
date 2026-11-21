@@ -2,7 +2,7 @@
 
 Original HexaFlake concept and geometric architecture: [@Akitti](https://x.com/Akitti). Computational implementation and experimental development: Elpis / [abraxis717](https://github.com/abraxis717).
 
-This is a component-level research source distribution, not a released integrated runtime. Source SHA-256 values refer to upstream bytes before any import-path change.
+The original component provenance remains unchanged; the separately released Geodome runtime is documented below. Source SHA-256 values refer to upstream bytes before any import-path change.
 
 CGC upstream: https://github.com/abraxis717/CGC/tree/13ccb7e828237e56bebcc42ef02cacb6a1519d73
 YM source revision: `eafdb15293c6e47010c159c9adb8d7977e22e868`. Native source redistributed under its upstream Apache-2.0 terms, with upstream NOTICE retained.
@@ -24,3 +24,7 @@ The CGC and Elpis Apache-2.0 texts have been consolidated into `LICENSE`. See `N
 The R5B bridge and complete native host/registry interface require dependency closure and separate clean-checkout qualification before inclusion.
 
 CPython `math.fsum` reference: https://github.com/python/cpython/blob/v3.11.9/Modules/mathmodule.c (comparison reference; exact historical source revision was not recorded). `HCA88.c` is byte-identical to the pinned Elpis source.
+
+## Geodome Reference v1.0.0
+
+Original HexaFlake concept and geometric architecture: [@Akitti](https://x.com/Akitti). Qualified upstream commit `993429cc94e9e3dcfd42df40502fa5b57175d883`; frozen manifest `07fa86bb3b6b88b0efe6c49e91e260e825678450e58c2dd10ffbff2750164e90`; terminal C9 receipt `44864c28986334de5a2da6abca095ba76aced07cf95dd160ba3204d7ae5b752c`. Five frozen computational modules, seven replay programs, invariant comparator and C9 consumer retain original bytes. Seven geometry/compute sources and original licenses are shared with the root tree. Public launcher replaces only local-path orchestration; no frozen kernel changes. Nine original receipts are retained byte-identically after private-path review. [Public source manifest](Geodome/PUBLIC.sha256) verifies the reorganized tree; original manifest paths are preserved in `Geodome/provenance/` for provenance only. [API, fingerprints and replay](Geodome/README.md).

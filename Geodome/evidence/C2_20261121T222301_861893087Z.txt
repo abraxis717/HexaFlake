@@ -1,0 +1,8 @@
+VOLATILE_WRITE_BOUNDARY=PASS LANDLOCK_ABI=7
+EXHAUSTIVE_COORDINATES=PASS
+EXHAUSTIVE_CODE_SPACE=PASS
+EXHAUSTIVE_PREFIXES=PASS
+EXHAUSTIVE_ARCS=PASS
+=== SEND BACK ===
+C2_RESULT={"CGC": "NOT_RUN", "HCA88": "NOT_RUN", "KV_cache": "NOT_ALLOCATED", "audit_seconds": 35.579755419981666, "coordinate_roundtrips": 144002, "directed_arcs": 864000, "edge_sha256": "712a8fc3d94685aeb614456ba8c88f6df7e6c6ea8a4c19e86d4d3865ad014231", "edges": 432000, "index_payload_bytes": 11502238, "mapping_sha256": "abe96202b554608bd8f5e702b70459daaaf4ab33eb7dfd058723fd4d1724f51b", "negative_controls": 14, "occupied_codes": 144002, "peak_rss_bytes": 103559168, "phase": "GEO_CLOSE_C2_R0", "prefix_memberships": 1152016, "prefix_pages": 281637, "prefixes_tested": 960800, "runtime_persistent_writes": "NONE", "status": "PASS_FULL_SCALE_ADDRESS_AND_ARC_RESOLUTION", "total_seconds": 37.9290223660646, "transport_authority": "NOT_GRANTED", "unoccupied_codes_rejected": 679541, "vertices": 144002}
+NEXT_GATE=GEO_CLOSE_C3_VOLATILE_STATE

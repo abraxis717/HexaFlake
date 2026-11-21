@@ -1,0 +1,61 @@
+PHASE=GEO_CLOSE_C8_R0 PIN=993429cc94e9e3dcfd42df40502fa5b57175d883
+Python 3.11.9
+cc (GCC) 16.2.1 20260810
+START_REPLAY_C1
+VOLATILE_WRITE_BOUNDARY=PASS LANDLOCK_ABI=7
+REPLAY_C1={"elapsed_seconds": null, "invariant_sha256": "2eaf666ec02bb41e1761a6d2cfffb4f98d590a035f54a63929d2aba6625719ec", "peak_rss_bytes": null, "status": "PASS"}
+START_REPLAY_C2
+VOLATILE_WRITE_BOUNDARY=PASS LANDLOCK_ABI=7
+REPLAY_C2={"elapsed_seconds": 36.285743533982895, "invariant_sha256": "7d6f83e81ea4dd1384efc3a1a432e52d2b9855f9383ef00f76a8d4ee8a913730", "peak_rss_bytes": 102223872, "status": "PASS"}
+START_REPLAY_C3
+VOLATILE_WRITE_BOUNDARY=PASS LANDLOCK_ABI=7
+REPLAY_C3={"elapsed_seconds": 12.273991805966944, "invariant_sha256": "80869cb7959f74c499b32463db0f34a3b1f8d9f98eb2eda09977d08518a226f1", "peak_rss_bytes": 123645952, "status": "PASS"}
+START_REPLAY_C4
+VOLATILE_WRITE_BOUNDARY=PASS LANDLOCK_ABI=7
+REPLAY_C4={"elapsed_seconds": 2.9940896650077775, "invariant_sha256": "4cbdd231b76f4091dfe11d91b724265b1df4b7c19c68075165da92ccfd6feb15", "peak_rss_bytes": 451026944, "status": "PASS"}
+START_REPLAY_C5
+VOLATILE_WRITE_BOUNDARY=PASS LANDLOCK_ABI=7
+REPLAY_C5={"elapsed_seconds": 3.8128601108910516, "invariant_sha256": "26d67d193e25badde8785e1b1f6f72fb8e4323c4b7f0d5897c5b397c3ecd3a55", "peak_rss_bytes": 75943936, "status": "PASS"}
+START_REPLAY_C6
+VOLATILE_WRITE_BOUNDARY=PASS LANDLOCK_ABI=7
+REPLAY_C6={"elapsed_seconds": 12.294929457944818, "invariant_sha256": "26485b318c1917b6100aa5b2c87d4ab3bfe115ce347e5da4489dd80b3c5dc991", "peak_rss_bytes": 146960384, "status": "PASS"}
+START_REPLAY_C7
+VOLATILE_WRITE_BOUNDARY=PASS LANDLOCK_ABI=7
+REPLAY_C7={"elapsed_seconds": 4.5559088790323585, "invariant_sha256": "08154bedce928fd39f2416043cd1d77f937cdf88b6b4e56a2026778dabd96bdc", "peak_rss_bytes": 82571264, "status": "PASS"}
+Hexaflag.py: OK
+GEO144K/g1c_compact.py: OK
+GEO144K/g2b_bridge.py: OK
+CGC120.py: OK
+src/ecsg_e0.py: OK
+HCA88.c: OK
+HCA88.h: OK
+evidence/C1_20261121T221935_162287028Z.txt: OK
+evidence/C2_20261121T222301_861893087Z.txt: OK
+evidence/C3_20261121T222709_046473500Z.txt: OK
+evidence/C4_20261121T222957_542390033Z.txt: OK
+evidence/C5_20261121T223407_709616992Z.txt: OK
+evidence/C6_20261121T223623_783085645Z.txt: OK
+evidence/C7_20261121T223925_430012923Z.txt: OK
+src/geodome_index.py: OK
+src/geodome_state.py: OK
+src/geodome_compute.py: OK
+src/geodome_scheduler.py: OK
+AUTHORITY.sha256: OK
+PUBLIC.sha256: OK
+README.md: OK
+RUN_C8.sh: OK
+compare.py: OK
+geodome_compute.py: OK
+geodome_index.py: OK
+geodome_scheduler.py: OK
+geodome_state.py: OK
+replay_c1.py: OK
+replay_c2.py: OK
+replay_c3.py: OK
+replay_c4.py: OK
+replay_c5.py: OK
+replay_c6.py: OK
+replay_c7.py: OK
+=== SEND BACK ===
+C8_RESULT={"phase":"GEO_CLOSE_C8_R0","status":"PASS_ISOLATED_PINNED_SOURCE_REPRODUCTION","replayed_gates":7,"invariant_parity_gates":7,"native_C4_replayed":true,"historical_DEV_dependency":false,"source_mutation":"NONE","runtime_persistent_writes":"NONE","learned_competence":"NOT_RUN","scope":"SAME_WORKSTATION_CLEAN_SOURCE_REPLAY"}
+NEXT_GATE=GEO_CLOSE_C9_STABLE_API

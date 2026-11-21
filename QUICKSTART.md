@@ -62,3 +62,14 @@ This additionally checks address round trips, exact registry lookups, subtree eq
 The repository is a source-level research distribution. A Python wheel is not required for this quick start; the native smoke compiles the pinned C source directly. The existing `pyproject.toml` describes Python package build metadata, but no prebuilt wheel or compiled native library is claimed here.
 
 These are component tests, not a reproduction of historical R5B checkpoints, a full 144K active runtime, a physical Yang–Mills simulation or evidence of cognitive superiority. Logical addressing does not establish exact physical nesting, connected prefixes or semantic adjacency.
+
+## Geodome Reference
+
+Clone the repository and run from its root:
+
+```sh
+python3 -I -B Geodome/run.py --example
+python3 -I -B Geodome/run.py
+```
+
+Linux x86-64, Python 3.10+, Landlock ABI >=3, zero swap, at least 1 GiB available RAM and 64 MiB free RAM-backed shared memory. No compiler, PyTorch or GPU required for these two commands. Expect `GEODOME_EXAMPLE=PASS` and `GEODOME_REFERENCE=PASS MODE=consumer C4=NOT_RUN`. A HOLD means the prerequisites or qualification failed; no unsandboxed fallback. On macOS/Windows/restricted Linux, use a compatible Linux VM. Full C1–C7 and C9 replay: `python3 -I -B Geodome/run.py --replay` (CPU PyTorch, C11 compiler, 5 GiB available RAM). See [API and execution contracts](Geodome/README.md). The existing hosted native smoke tests HCA88, not the Geodome qualification chain.

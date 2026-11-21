@@ -8,6 +8,16 @@ Bounded hierarchical geometry for sparse relational computation. HexaFlake combi
 
 **Not on a compatible Linux machine?** See the [hosted native smoke results](https://github.com/abraxis717/HexaFlake/actions); no local installation required to read the logs.
 
+## Geodome Reference v1.0.0
+
+The integrated [Geodome runtime](Geodome/README.md) provides a standard-library reference API for the full frequency-120 identity index, bounded volatile state and explicit sparse synchronous execution. No PyTorch or GPU is required for the core.
+
+```sh
+python3 -I -B Geodome/run.py --example
+```
+
+See the [Quick start](QUICKSTART.md#geodome-reference) for prerequisites and [Geodome qualification](Geodome/README.md#reproduction) for exact replay instructions. Logical identity is not physical nesting or semantic adjacency. The generic scheduler does not establish learned cognition or outperform task-specific flat algorithms.
+
 ## Source map
 
 | Component | Location | Scope |
@@ -16,10 +26,11 @@ Bounded hierarchical geometry for sparse relational computation. HexaFlake combi
 | CGC120 | [`CGC120.py`](CGC120.py) | Four 5×6 float64 channels; 120 trainable parameters, upstream reference |
 | HCA88 | [`HCA88.c`](HCA88.c), [`HCA88.h`](HCA88.h) | Pinned native 88-parameter sparse-window kernel and ABI declarations |
 | GEO144K | [`GEO144K/`](GEO144K/) | Procedural topology and logical address bridge |
+| Geodome | [`Geodome/`](Geodome/) | Versioned stdlib runtime, volatile state and scheduler; optional neural adapter |
 | Supporting execution | [`src/`](src/) | Exact relation registry and scalar CGC implementation |
 | Geometry regression | [`tests/`](tests/) | Address, registry and rejection checks |
 
-The intended frequency-120 mesh contains 144,002 vertices, 432,000 edges and 288,000 faces. Logical addressing does not imply exact nested physical hexagons, connected prefixes or semantic adjacency. CGC and HCA88 reference implementations are separately qualified in bounded experiments; this initial source layout is not an end-to-end runtime or a claim of common checkpoint/host compatibility.
+The intended frequency-120 mesh contains 144,002 vertices, 432,000 edges and 288,000 faces. Logical addressing does not imply exact nested physical hexagons, connected prefixes or semantic adjacency. CGC and HCA88 reference implementations are separately qualified in bounded experiments; the original component surface does not establish common checkpoint/host compatibility. Geodome v1.0.0 provides separately qualified bounded substrate execution.
 
 See [RESULTS](RESULTS.md) for the consolidated research findings and [REFERENCES](REFERENCES.md) for source pins, attribution and publication gates.
 
@@ -39,4 +50,4 @@ See [Quick start](QUICKSTART.md) for exact prerequisites, expected output, troub
 
 ## License and attribution
 
-The project software is distributed under [Apache-2.0](LICENSE), except for the CPython-derived summation routine, whose applicable Python license is retained in [licenses/CPython.txt](licenses/CPython.txt). See [NOTICE](NOTICE) for credit and source provenance. This repository is a component-level research snapshot; the historical R5B host is deliberately excluded. No full-scale swarm or production runtime qualification is claimed.
+The project software is distributed under [Apache-2.0](LICENSE), except for the CPython-derived summation routine, whose applicable Python license is retained in [licenses/CPython.txt](licenses/CPython.txt). See [NOTICE](NOTICE) for credit and source provenance. The historical R5B host is deliberately excluded. Geodome is a separately qualified reference runtime, not a learned cognitive system. No full-scale swarm or production runtime qualification is claimed.
