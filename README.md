@@ -4,6 +4,8 @@
 
 Bounded hierarchical geometry for sparse relational computation. HexaFlake combines exact logical aperture-7 addressing with a frequency-120 icosahedral geodesic research track, local Cubic Geometric Core (CGC) computation, and authorized equivariant relational transport. It is a computational research substrate, not a physical Yang–Mills simulation or a qualified cognitive swarm.
 
+**Try it:** [Quick start](QUICKSTART.md) — build and run the native fail-closed smoke test.
+
 ## Source map
 
 | Component | Location | Scope |
@@ -23,15 +25,15 @@ Runtime changes must remain volatile; active state, relations, recurrence, trial
 
 ## Component tests
 
-Python 3.10+ and PyTorch 2.0+ are declared in `pyproject.toml`; native tests need a C11 compiler and libm. Run from the repository root in an externally enforced volatile-write sandbox. Set `scratch` to an existing writable, executable volatile directory before running the following commands (on no-exec tmpfs, use an operator-provided in-memory executable host).
+Run the native smoke test on a supported Linux system with Python and a C11 compiler:
 
 ```sh
-cc -std=c11 -O2 -ffp-contract=off -I. HCA88.c tests/test_hca88.c -lm -o "$scratch/native-smoke"
-"$scratch/native-smoke"
-HEXAFLAKE_NATIVE_SMOKE="$scratch/native-smoke" python -B -m unittest discover -s tests -v
+python3 -B smoke.py
 ```
 
-The synthetic coupling test uses fixed CPU CGC weights, a bounded two-window native recurrence and a CGC readout. It checks a two-hop response and a zero-input control. It is not the historical R5B host or a learned swarm. Without the native executable, that particular test is skipped.
+No GPU, PyTorch or model download is needed. The launcher compiles HCA88 in RAM, checks valid transport and fail-closed rejection, and refuses execution without the volatile-write boundary. For the full Python/CGC/geometry and synthetic coupling tests, use `python3 -B smoke.py --full` with PyTorch already installed.
+
+See [Quick start](QUICKSTART.md) for exact prerequisites, expected output, troubleshooting and source locations.
 
 ## License and attribution
 
